@@ -4,7 +4,7 @@
 // ============================================
 const DEMO_LINKS = {
   form: 'https://airtable.com/embed/appKb6vuUasg2aMsi/shr6GPNP2MshHW1fb',        // Airtable form share link (embed version)
-  view: 'https://airtable.com/appKb6vuUasg2aMsi/shrbJSSmzmxEMKz8X',       // Shared grid view link, set to read-only
+  view: 'YOUR_READ_ONLY_VIEW_LINK',       // Shared grid view link, set to read-only
   copy: 'YOUR_COPY_BASE_LINK'             // Base share link (the "Copy base" link)
 };
 
