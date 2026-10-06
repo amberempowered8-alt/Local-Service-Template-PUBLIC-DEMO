@@ -3,7 +3,7 @@
 // Paste the three links below once you have made them in Airtable.
 // ============================================
 const DEMO_LINKS = {
-  form: 'YOUR_AIRTABLE_FORM_LINK',        // Airtable form share link (embed version)
+  form: 'https://airtable.com/embed/appKb6vuUasg2aMsi/shrbJSSmzmxEMKz8X',        // Airtable form share link (embed version)
   view: 'YOUR_READ_ONLY_VIEW_LINK',       // Shared grid view link, set to read-only
   copy: 'YOUR_COPY_BASE_LINK'             // Base share link (the "Copy base" link)
 };
