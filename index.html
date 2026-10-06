@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try It Free: Local Service Website Demo | AE9 Labs</title>
+<meta name="description" content="A public playground. Click around a real local service website, send a test request, and see it land in your own Airtable. Fake info only.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="playground" role="note">
+  <strong>PUBLIC PLAYGROUND.</strong> This is a demo for testing only. Please use <strong>fake information</strong>. Everything you type here is public and is deleted regularly.
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">Juniper Home Services</a>
+    <nav class="nav">
+      <a href="#how">How to play</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Request a quote</a>
+      <a href="#hood">Under the hood</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Try before you buy</p>
+    <h1>This is a real website. <em>Go ahead and play with it.</em></h1>
+    <p>Juniper Home Services is a made-up business. The site, the form and the database behind it are the real thing. Send a test request and watch it land in an Airtable that could be yours.</p>
+    <div class="hero-actions">
+      <a href="#book" class="btn btn-primary">Send a test request</a>
+      <a href="#hood" class="btn btn-ghost">See what's behind it</a>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">Three quick steps</p>
+    <h2 class="section-title">How to try it</h2>
+    <p class="section-sub">It takes about two minutes. No account needed for steps 1 and 2.</p>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><h3>Send a test request</h3><p>Fill out the form below with made-up info. This is what your customers would see on your site.</p></div>
+      <div class="step"><span class="num">2</span><h3>Watch it land</h3><p>Open the read-only database and find your test request in the Leads table. That is your data, in your own spreadsheet.</p></div>
+      <div class="step"><span class="num">3</span><h3>Copy it and make it yours</h3><p>Copy the base into a free Airtable account. Change a service name or a price and see how it works.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="section-title">Services</h2>
+    <p class="section-sub">These cards come from the Services table in the database. On your own site, you change a row in Airtable and this section updates, with no code.</p>
+    <div class="services-grid" id="services-grid"><p class="loading">Loading services…</p></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">What people say</p>
+    <h2 class="section-title">Reviews (all made up)</h2>
+    <p class="section-sub">Sample testimonials, so you can see how reviews look on your own site.</p>
+    <div class="testimonial-grid" id="testimonial-grid"><p class="loading">Loading reviews…</p></div>
+  </div>
+</section>
+
+<section id="book" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Your turn</p>
+    <h2 class="section-title">Request a quote</h2>
+    <div class="warn">
+      <strong>Playground only. Please use fake information.</strong>
+      Use a made-up name and a fake phone number like 555-0100. Do not put real personal details in the message box. No one will contact you, and no email is sent. After you submit, you will see a thank-you message.
+    </div>
+    <div class="form-wrap">
+      <iframe id="booking-form-embed" height="680" title="Demo request form (fake info only)"></iframe>
+      <div class="fallback" id="booking-fallback">
+        <p>The demo form is not connected yet.</p>
+        <p>Open <code>script.js</code> and paste your Airtable form link into <code>DEMO_LINKS.form</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hood">
+  <div class="wrap">
+    <p class="eyebrow">Under the hood</p>
+    <h2 class="section-title">See where your test request went</h2>
+    <p class="section-sub">Every request lands in an Airtable database you own. No platform in the middle, no monthly fee for the privilege of seeing your own customers.</p>
+    <div class="hood-grid">
+      <div class="hood-card">
+        <h3>Look at the database</h3>
+        <p>A read-only view of the demo base. Find your test request in the Leads table. You can look, but you can't change anything.</p>
+        <a class="btn btn-primary" id="view-link" href="#" target="_blank" rel="noopener">Open the read-only view</a>
+      </div>
+      <div class="hood-card">
+        <h3>Copy it and play for real</h3>
+        <p>Copy this base into your own free Airtable account. Rename a service, change a price, and make it yours.</p>
+        <a class="btn btn-amber" id="copy-link" href="#" target="_blank" rel="noopener">Copy this base</a>
+      </div>
+    </div>
+    <div class="own">
+      <h3>You own all of it.</h3>
+      <p>The website is hosted free. The database is in your own Airtable account. There are no monthly platform fees, and it stays yours even if you never speak to me again.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Demo built by AE9 Labs. Juniper Home Services is not a real business, and every name, review and request here is made up.</p>
+    <p>Test requests are public and are deleted regularly. Please don't submit real personal information.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
