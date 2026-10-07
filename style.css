@@ -68,7 +68,7 @@ section{padding:72px 0}
 .warn{background:var(--warn-bg);border-left:5px solid var(--warn-line);border-radius:10px;padding:18px 20px;margin-bottom:24px;max-width:760px}
 .warn strong{display:block;margin-bottom:4px}
 .form-wrap{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;max-width:760px}
-.form-wrap iframe{display:block;border:0;width:100%}
+.form-wrap iframe{display:block;border:0;width:100%;height:1150px}
 .fallback{display:none;padding:40px 28px;text-align:center;color:var(--ink-soft)}
 .fallback code{background:#eef5f2;padding:2px 7px;border-radius:6px;color:var(--teal-dark)}
 
@@ -85,6 +85,7 @@ footer{background:var(--ink);color:#c9dcd7;padding:36px 0;font-size:.85rem;text-
 footer p+p{margin-top:8px}
 
 @media(max-width:760px){
+  .form-wrap iframe{height:1350px}
   section{padding:52px 0}
   .steps,.services-grid,.testimonial-grid,.hood-grid{grid-template-columns:1fr}
   .nav{display:none}
